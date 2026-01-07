@@ -1,13 +1,22 @@
-# Core libraries for DeepSeek-OCR Finetune
+# ===== Core (training + inference) =====
 transformers==4.46.3
 tokenizers==0.20.3
 peft==0.13.2
 accelerate==1.0.1
 datasets==3.0.1
-pillow==10.4.0
+
+# ===== Tensor / utils =====
 safetensors==0.4.4
 einops==0.8.0
 tqdm==4.66.5
 packaging==24.1
 ninja==1.11.1.1
 
+# ===== Image / document processing =====
+pillow==10.4.0
+PyMuPDF
+img2pdf
+
+# ===== Config / misc =====
+easydict
+addict
