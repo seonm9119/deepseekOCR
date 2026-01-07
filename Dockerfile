@@ -51,10 +51,4 @@ RUN pip install bitsandbytes==0.43.3
 # ---- flash-attn ----
 RUN pip install flash-attn==2.7.3 --no-build-isolation
 
-# ---- sanity (minimal) ----
-RUN python - <<'PY'
-import torch
-assert torch.cuda.is_available(), "CUDA not available"
-PY
-
 CMD ["/bin/bash"]

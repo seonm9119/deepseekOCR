@@ -1,0 +1,114 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Docker
+# =========================
+**/docker-data/
+docker-compose.override.yml
+
+# =========================
+# ML / Deep Learning
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# =========================
+# HuggingFace / Transformers cache
+# =========================
+.cache/
+.huggingface/
+hf_cache/
+
+# =========================
+# CUDA / Torch extensions
+# =========================
+torch_extensions/
+build/
+
+# =========================
+# Datasets
+# =========================
+data/
+dataset/
+datasets/
+*.zip
+*.tar.gz
+
+# =========================
+# Outputs
+# =========================
+outputs/
+results/
+runs/
+checkpoints/
+inference_results/
+
+# =========================
+# Temporary
+# =========================
+tmp/
+temp/
+
+
+# Custom
+output/
+samples/
+*.png
+*.pdf
