@@ -1,0 +1,22 @@
+services:
+  deepseek-ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: deepseek-ocr:latest
+    container_name: deepseek-ocr
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+    volumes:
+      # 프로젝트 코드 마운트 (코드 변경사항이 실시간으로 반영됨)
+      - .:/deepseekOCR
+      # HuggingFace 캐시 마운트
+      - ~/.cache/huggingface:/root/.cache/huggingface
+      # 데이터 디렉토리 (필요 시)
+      # - ./data:/deepseekOCR/data
+    working_dir: /deepseekOCR
+    stdin_open: true
+    tty: true
+
